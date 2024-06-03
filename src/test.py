@@ -13,3 +13,11 @@ test_data = torch.tensor(np.loadtxt("/home/yutaka/research/data/test_data.csv",d
 
 
 res = subprocess.run("sh /home/yutaka/research/src/test.sh", shell=True)
+
+#乱数seedの設定
+seed = 0
+torch.manual_seed(seed)
+
+
+layer1 = nn.Linear(5,16)
+print(layer1)
